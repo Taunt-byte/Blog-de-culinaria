@@ -1,4 +1,4 @@
-# Blog de colinaria
+# Blog-de-culinária
 
 ## FrontEnd
 
