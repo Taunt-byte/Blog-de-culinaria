@@ -2,5 +2,10 @@
 
 ## FrontEnd
 
+React
+Next.js
+Tailwind
+
 ## BackEnd
 
+Node.js
