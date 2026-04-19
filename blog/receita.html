@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<title>Receita</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>🍳 Sabor & Receita</h1>
+</header>
+
+<main class="recipe-page">
+
+  <div class="recipe-header">
+    <img id="imagem" class="recipe-image">
+    
+    <div class="recipe-title-box">
+      <h1 id="titulo"></h1>
+      <p id="descricao"></p>
+    </div>
+  </div>
+
+  <section class="recipe-grid">
+
+    <div class="card-box">
+      <h2>🧾 Ingredientes</h2>
+      <ul id="ingredientes"></ul>
+    </div>
+
+    <div class="card-box">
+      <h2>👨‍🍳 Modo de preparo</h2>
+      <ol id="preparo"></ol>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="Javascript/receitas.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search)
+const id = params.get("id")
+
+const receita = receitas.find(r => r.id == id)
+
+if (!receita) {
+    document.body.innerHTML = "<h2>Receita não encontrada</h2>"
+} else {
+
+document.getElementById("titulo").textContent = receita.nome
+document.getElementById("imagem").src = receita.imagem
+document.getElementById("descricao").textContent = receita.descricao
+
+const listaIngredientes = document.getElementById("ingredientes")
+
+receita.ingredientes.forEach(i=>{
+    const li = document.createElement("li")
+    li.textContent = i
+    listaIngredientes.appendChild(li)
+})
+
+const listaPreparo = document.getElementById("preparo")
+
+receita.preparo.forEach(p=>{
+    const li = document.createElement("li")
+    li.textContent = p
+    listaPreparo.appendChild(li)
+})
+
+}
+</script>
+
+</body>
+</html>
