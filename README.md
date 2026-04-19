@@ -83,29 +83,3 @@ preparo: ["Misturar ingredientes", "Assar no forno"]
 ```
 
 ---
-
-## 💡 Melhorias futuras
-
-* 🔎 Sistema de busca de receitas
-* 🏷 Filtros por categoria
-* ⭐ Favoritar receitas
-* 💾 Salvamento com LocalStorage
-* 📱 Layout mobile mais avançado
-* ⚙ Backend para gerenciamento de receitas
-
----
-
-## 🧑‍🍳 Autor
-
-Projeto desenvolvido para estudo de JavaScript puro, manipulação do DOM e criação de interfaces dinâmicas.
-
----
-
-Se quiser dar o próximo passo (e aí sim começar a assustar recrutador de verdade), dá pra transformar isso em:
-
-* ⭐ README com badges (tipo GitHub profissional)
-* 📸 screenshot do layout
-* 🚀 deploy com GitHub Pages
-* ⚛ versão em React
-
-Mas por enquanto, já não parece mais um “projetinho aleatório de JS”. Já virou algo que finge muito bem ser produto.
