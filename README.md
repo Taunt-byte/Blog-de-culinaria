@@ -1,9 +1,3 @@
-Beleza, seu README já estava decente, mas agora com vídeo dá pra deixar com cara de projeto de verdade mesmo, daqueles que não parecem “exercício de tutorial que virou repositório por acidente”.
-
-Aqui está a versão **arrumada, padronizada e com o vídeo integrado direito**:
-
----
-
 # 🍳 Sabor & Receita - Blog de Culinária Dinâmico
 
 Projeto simples de um blog de culinária feito com **HTML, CSS e JavaScript puro**, com foco em aprendizado de manipulação do DOM e renderização dinâmica de conteúdo.
